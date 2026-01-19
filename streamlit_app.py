@@ -13,9 +13,8 @@ st.write(
 cnx = st.connection("snowflake")
 session = cnx.session()
 
-myRequest = f"https://my.smoothiefroot.com/api/fruit/watermelon"
-
-st.write(f"Request output: {requests.get(myRequest)}")
+#myRequest = f"https://my.smoothiefroot.com/api/fruit/watermelon"
+#st.write(f"Request output: {requests.get(myRequest)}")
 
 
 privateKey = st.text_input("Key here", "placeholder")
@@ -49,3 +48,4 @@ if privateKey:
   response.raise_for_status()
   
   # st.write(response.json())
+

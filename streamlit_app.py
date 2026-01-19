@@ -16,6 +16,7 @@ session = cnx.session()
 #myRequest = f"https://my.smoothiefroot.com/api/fruit/watermelon"
 #st.write(f"Request output: {requests.get(myRequest)}")
 
+st.write(requests.get("https://api.ipify.org").text)
 
 privateKey = st.text_input("Key here", "placeholder")
 st.write("Your private key is", privateKey)
@@ -47,6 +48,7 @@ if privateKey:
   response = requests.post(url, headers=headers, json=payload)
   #response.raise_for_status()
   st.write(response.json())
+
 
 
 

@@ -45,7 +45,7 @@ if privateKey:
   }
   
   response = requests.post(url, headers=headers, json=payload)
-  response.raise_for_status()
-  
-  # st.write(response.json())
+  #response.raise_for_status()
+  st.write(response.json())
+
 

@@ -23,7 +23,7 @@ st.write("Your private key is", privateKey)
 
 
 if privateKey:
-  url = "https://FINCAN-POC.snowflakecomputing.com/api/v2/databases/TAX_POLICY/schemas/GST/agents/TESTIFY:run"
+  url = "https://FINCAN-POC.snowflakecomputing.com/api/v2/databases/STUDENTS_BUDGET_CHATBOT/schemas/PUBLIC/agents/STUDENTS_BUDGET_BOT:run"
   
   headers = {
       "Authorization": "Bearer " + privateKey,
@@ -48,6 +48,7 @@ if privateKey:
   response = requests.post(url, headers=headers, json=payload)
   #response.raise_for_status()
   st.write(response.json())
+
 
 
 

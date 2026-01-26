@@ -38,7 +38,7 @@ if privateKey:
               "content": [
                   {
                       "type": "text",
-                      "text": "What are the sales trends?"
+                      "text": "Military budget for 2025?"
                   }
               ]
           }
@@ -48,6 +48,7 @@ if privateKey:
   response = requests.post(url, headers=headers, json=payload)
   #response.raise_for_status()
   st.write(response.json())
+
 
 
 
